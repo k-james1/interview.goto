@@ -12,7 +12,7 @@ chapters.forEach((chapter) => {
       ease: 'power2.out', // イージングの種類（power2.outで終わりに向けて徐々にスピードが落ちる）
       scrollTrigger: {
         trigger: chapter, // スクロールのトリガーとなる要素
-        start: 'top 80%', // アニメーションが開始するスクロール位置（チャプター要素の上端が画面の80%の位置に来たら開始）
+        start: "top top", // アニメーションが開始するスクロール位置（チャプター要素の上端が画面の80%の位置に来たら開始）
         toggleActions: 'play none none none', // スクロールによるアニメーションの動作（playで再生、noneで何もしない,https://codepen.io/GreenSock/pen/LYVKWGoを参照）
         once: true, // アニメーションを一度だけ実行
       }

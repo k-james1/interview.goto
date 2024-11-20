@@ -18,17 +18,19 @@ body {
       max-width: 1440px;
       margin: 0 auto;
       padding: 0 20px;
+      justify-content: center; 
+    }
+  .container-content {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 20px;
+      justify-content: center;
+      margin-top:400px; 
     }
 
-    .container-scroll{
-      align-items: center;
-      display: flex;
-      height: 1000px;
-      justify-content: center;
-    }
     .side-scroll {
       height: 200px;
-      width: 100%;
+      width: 100%;  
     }
     .side-scroll-container {
       align-items: center;
@@ -37,11 +39,13 @@ body {
       margin-inline: auto;
       overflow: hidden;
       width: 80%;
+      
     }
     .side-scroll-list {
       display: flex;
       gap: 3vw;
       list-style:none;
+      
     }
     img {
       height: 20vw;
@@ -52,6 +56,7 @@ body {
   .header {
     text-align: center;
     padding: 32px 0;
+    margin-top:50px;
   }
   
   .header h1 {
