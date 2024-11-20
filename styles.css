@@ -19,7 +19,36 @@ body {
       margin: 0 auto;
       padding: 0 20px;
     }
-  
+
+    .container-scroll{
+      align-items: center;
+      display: flex;
+      height: 1000px;
+      justify-content: center;
+    }
+    .side-scroll {
+      height: 200px;
+      width: 100%;
+    }
+    .side-scroll-container {
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      margin-inline: auto;
+      overflow: hidden;
+      width: 80%;
+    }
+    .side-scroll-list {
+      display: flex;
+      gap: 3vw;
+      list-style:none;
+    }
+    img {
+      height: 20vw;
+      object-fit: cover;
+      width: 30vw;
+    }
+
   .header {
     text-align: center;
     padding: 32px 0;
