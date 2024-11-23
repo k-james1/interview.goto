@@ -11,6 +11,7 @@ body {
   h1 {
     font-size: 40px;
     color: #042e57;
+    text-align:center;
   }
   
   span {
@@ -60,14 +61,13 @@ body {
       height: 30%;
       width:60%;
       margin-top:50px;
-  
     }
+
   .header {
     text-align: center;
     padding: 32px 0;
     margin-top:50px;
   }
-  
   .header h1 {
     margin-bottom: 16px;
   }
@@ -75,18 +75,23 @@ body {
   .container-washa{
     max-width: 1440px;
     margin-top:400px;
-    padding: 0 20px;
     justify-content: center; 
+    text-align:center;
   }
- .washa h1{
-  text-align:center;
- }
- .speaker{
-  display:flex;
-  justify-content:center;
-  text-align:center;
-  gap:30%;
- }
+  .container-washa ul{
+    display:flex;
+    justify-content:center;
+    gap:15%;
+    margin-left:-40px;
+    margin-top:30px;
+  }
+  .container-washa li{
+  width:30%;
+  list-style:none;
+  }
+  .container-washa img{
+    border-radius:50%;
+  }
 
  .chapter {
     height: 80%;
@@ -144,5 +149,17 @@ body {
     .chapter p {
       font-size: 13px;
     }
+ 
+  .container-washa ul{
+    flex-direction:column;
   }
+  .container-washa li{
+    width:100%;
+    margin-bottom:30px;
+  }
+  .container-washa img{
+    height:50%;
+    width:50%;
+  }
+}
   
