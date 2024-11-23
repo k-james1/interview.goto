@@ -56,7 +56,12 @@ body {
       object-fit: cover;
       width: 30vw;
     }
-
+    .chapter img{
+      height: 30%;
+      width:60%;
+      margin-top:50px;
+  
+    }
   .header {
     text-align: center;
     padding: 32px 0;
@@ -95,7 +100,7 @@ body {
   }
   
   .chapter.common {
-    background-color: #d1e0e4;
+    background-color: #f7ead6;
   }
   
   .chapter h2 {
