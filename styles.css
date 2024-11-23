@@ -5,7 +5,7 @@
 body {
   font-family:"kiwi-maru";
     color: #333;
-    background-color: #f2f6f2;
+    background-color: #e1f8e1;
   }
   
   h1 {
@@ -74,7 +74,7 @@ body {
 
   .container-washa{
     max-width: 1440px;
-    margin-top:400px;
+    margin-top:500px;
     justify-content: center; 
     text-align:center;
   }
@@ -83,16 +83,40 @@ body {
     justify-content:center;
     gap:15%;
     margin-left:-40px;
-    margin-top:30px;
+    margin-top:80px;
   }
+  .container-washa p{
+    margin-bottom:-20px;
+  }
+  .marker{
+    background-image:linear-gradient(90deg,#9ec5ff,#9ec5ff);
+    background-position:left bottom;
+    background-repeat:no-repeat;
+    background-size:0 5px;
+    padding-bottom:3px;
+    transition: 0.5s;
+  }
+  .marker.active{
+    background-size:100% 5px;
+  }
+
+  /* マーカーが表示された時のスタイル */
+  .marker.active {
+    background-size: 100% .5em; /* 線の横幅を100%にする */
+  }
+
   .container-washa li{
   width:30%;
   list-style:none;
   }
   .container-washa img{
     border-radius:50%;
+    transition-duration:0.3s;
   }
-
+  .container-washa img:hover{
+    transform:scale(1.2);
+    transition-duration:0.3s;
+  }
  .chapter {
     height: 80%;
     padding: 32px;
@@ -101,13 +125,15 @@ body {
     margin-right:60px;
     border-radius:10%;
     padding:100px;
-
   }
-  
+
   .chapter.common {
     background-color: #f7ead6;
   }
   
+  .chapter img{
+    width:80%;
+  }
   .chapter h2 {
     font-size: 32px;
     color: #2980b9;
@@ -155,7 +181,7 @@ body {
   }
   .container-washa li{
     width:100%;
-    margin-bottom:30px;
+    margin-bottom:80px;
   }
   .container-washa img{
     height:50%;

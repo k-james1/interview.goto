@@ -22,6 +22,9 @@ gsap.to(slides, {
 });
 
 
+
+
+
 // .chapterクラスを持つ要素をすべて取得
 const chapters = document.querySelectorAll('.chapter');
 
@@ -44,3 +47,14 @@ chapters.forEach((chapter) => {
     }
   );
 });
+
+gsap.to(".marker", {
+  scrollTrigger: {
+    trigger: ".marker", // アニメーションが始まるトリガーとなる要素
+    start: "top 80%", // アニメーションが始まる位置
+    toggleClass: {
+      targets: ".marker", // クラスを切り替える対象の要素
+      className: "active", // クラス名 "active" を付け外し
+    },
+  },
+})
