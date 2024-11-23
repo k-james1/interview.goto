@@ -1,17 +1,21 @@
+ @font-face {
+  font-family:"kiwi-maru";
+  src:url("Kiwi_Maru/KiwiMaru-Regular.ttf") format("truetype");
+ }
 body {
-    font-family: Arial, sans-serif;
+  font-family:"kiwi-maru";
     color: #333;
     background-color: #f2f6f2;
   }
   
   h1 {
     font-size: 40px;
-    color: #2c3e50;
+    color: #042e57;
   }
   
   span {
     font-size: 20px;
-    color: #7f8c8d;
+    color: #135358;
   }
   
   .container {
@@ -25,7 +29,7 @@ body {
       margin: 0 auto;
       padding: 0 20px;
       justify-content: center;
-      margin-top:400px; 
+      margin-top:100px;
     }
 
     .side-scroll {
@@ -62,8 +66,24 @@ body {
   .header h1 {
     margin-bottom: 16px;
   }
-  
-  .chapter {
+
+  .container-washa{
+    max-width: 1440px;
+    margin-top:400px;
+    padding: 0 20px;
+    justify-content: center; 
+  }
+ .washa h1{
+  text-align:center;
+ }
+ .speaker{
+  display:flex;
+  justify-content:center;
+  text-align:center;
+  gap:30%;
+ }
+
+ .chapter {
     height: 80%;
     padding: 32px;
     margin-bottom: 64px;
@@ -71,6 +91,7 @@ body {
     margin-right:60px;
     border-radius:10%;
     padding:100px;
+
   }
   
   .chapter.common {
