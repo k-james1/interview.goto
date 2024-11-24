@@ -77,6 +77,7 @@ body {
     margin-top:600px;
     justify-content: center; 
     text-align:center;
+    margin-bottom:200px;
   }
   .container-washa ul{
     display:flex;
@@ -127,6 +128,7 @@ body {
     border-radius:10%;
     padding:100px;
   }
+
 
   .chapter.common {
     background-color: #f7ead6;
