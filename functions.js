@@ -49,7 +49,6 @@ chapters.forEach((chapter) => {
 });
 
 
-
 gsap.to(".marker", {
   scrollTrigger: {
     trigger: ".marker", // アニメーションが始まるトリガーとなる要素
@@ -61,15 +60,24 @@ gsap.to(".marker", {
   },
 })
 
+const pops=document.querySelectorAll(".pop img");
+pops.forEach((pop)=>{
+gsap.fromTo(
+  ".pop img",
+  { autoAlpha: 0, scale: 0.8 }, // 初期状態
+  {
+    duration: 1.2,
+    autoAlpha: 1,
+    scale: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".pop img",
+      start: "top 75%",
+    },
+  }
+);
+});
 
-gsap.utils.toArray('.pop img1').forEach((target)=>{
-  gsap.fromTo(target,{scale:.9,autoAlpha:0},
-    {scale:1,autoAlpha:1,ease:"back.out(1.7)",
-      scrollTrigger:{
-      trigger:target,
-      start:'top 80%'
-  }});
-})
 
 gsap.from(".BIG",{
   scrollTrigger:{
