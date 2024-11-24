@@ -41,12 +41,14 @@ chapters.forEach((chapter) => {
       scrollTrigger: {
         trigger: chapter, // スクロールのトリガーとなる要素
         start: 'top 80%', // アニメーションが開始するスクロール位置（チャプター要素の上端が画面の80%の位置に来たら開始）
-        toggleActions: 'play none none none', // スクロールによるアニメーションの動作（playで再生、noneで何もしない,https://codepen.io/GreenSock/pen/LYVKWGoを参照）
+        toggleActions: 'play none none none', // スクロールによるアニメーションの動作（playで再生、noneで何もしない）
         once: true, // アニメーションを一度だけ実行
       }
     }
   );
 });
+
+
 
 gsap.to(".marker", {
   scrollTrigger: {
@@ -57,6 +59,16 @@ gsap.to(".marker", {
       className: "active", // クラス名 "active" を付け外し
     },
   },
+})
+
+
+gsap.utils.toArray('.pop img1').forEach((target)=>{
+  gsap.fromTo(target,{scale:.9,autoAlpha:0},
+    {scale:1,autoAlpha:1,ease:"back.out(1.7)",
+      scrollTrigger:{
+      trigger:target,
+      start:'top 80%'
+  }});
 })
 
 gsap.from(".BIG",{
