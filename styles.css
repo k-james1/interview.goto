@@ -5,7 +5,7 @@
 body {
   font-family:"kiwi-maru";
     color: #333;
-    background-color: #e1f8e1;
+    background-color:#8bd3dd;
   }
   
   h1 {
@@ -16,7 +16,7 @@ body {
   
   span {
     font-size: 20px;
-    color: #135358;
+    color: #596059;
   }
   
   .container {
@@ -32,7 +32,7 @@ body {
       justify-content: center;
       margin-top:100px;
     }
-
+    
     .side-scroll {
       height: 200px;
       width: 100%;  
@@ -74,7 +74,7 @@ body {
 
   .container-washa{
     max-width: 1440px;
-    margin-top:500px;
+    margin-top:600px;
     justify-content: center; 
     text-align:center;
   }
