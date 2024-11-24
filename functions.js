@@ -62,11 +62,11 @@ gsap.to(".marker", {
 gsap.from(".BIG",{
   scrollTrigger:{
     trigger:".BIG",
-    start:"center center",
+    start:"top 60%",
     end:"bottom bottom",
     scrub: true,
   },
-  duration:0.5,
+  duration:0.1,
   backgroundColor:"#e1f8e1",
   ease:"none",
 });
