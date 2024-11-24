@@ -60,23 +60,7 @@ gsap.to(".marker", {
   },
 })
 
-const pops=document.querySelectorAll(".pop img");
-pops.forEach((pop)=>{
-gsap.fromTo(
-  ".pop img",
-  { autoAlpha: 0, scale: 0.8 }, // 初期状態
-  {
-    duration: 1.2,
-    autoAlpha: 1,
-    scale: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".pop img",
-      start: "top 75%",
-    },
-  }
-);
-});
+
 
 
 gsap.from(".BIG",{
